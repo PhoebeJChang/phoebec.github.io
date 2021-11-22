@@ -3,8 +3,10 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
     $(document).ready(function() {
-      $("pic").css("color", "red");
-
+      $(".picture").hide();
+      $(".picBtn").click(function(){
+        $(".picture").toggle();
+      });
     });
     
     
@@ -58,11 +60,11 @@
           <li>Reading novels</li>
         </ul>
       </p>
-        <button class="btn btn-default target" id="pic"> What I've designed.</button>
-        <img src="https://github.com/PhoebeJChang/phoebec.github.io/blob/main/105008633-%E5%BC%B5%E7%94%84%E5%BA%AD-aftershokz.jpg?raw=true" alt="What I design before" style="width:600px;height:300px;">
-        
-        
-      
+        <button class="btn btn-default target" id="picBtn"> What I've designed.</button>
+        <div class="picture">
+           <img src="https://github.com/PhoebeJChang/phoebec.github.io/blob/main/105008633-%E5%BC%B5%E7%94%84%E5%BA%AD-aftershokz.jpg?raw=true" alt="What I design before" style="width:600px;height:300px;">
+        </div>
+
     </div>
     <div class="column">
       <p>
